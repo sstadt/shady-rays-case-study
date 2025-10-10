@@ -15,6 +15,9 @@
 
     if (!$saleBadge) return;
 
+    // NOTE: If there are other badges and we only want to show a single badge
+    //       we could add additional logic here to determine which badge to
+    //       prioritize.
     if (compareAtPrice && price && parseFloat(compareAtPrice) > parseFloat(price)) {
       $saleBadge.style.display = '';
     } else {
