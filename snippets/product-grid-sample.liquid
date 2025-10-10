@@ -1,0 +1,14 @@
+
+{%- for product in collection.products -%}
+  <div class="sr-product-card-v2 product-card shadeshop-product-item" data-product-container="group-classic-originals" data-group-container="group-classic" data-product-id="4431586295855" data-product-tags="anniversary-sale,anniversary-sale-extra,BESTSELLER_LAST30DAYS,bfcm-2024-60-men,bfcm-2024-60-women,bfcm-2024-men,bfcm-2024-women,bfcm-50-2023-men,bfcm-60-2024,BFCM-SHADE-SHOP,classic-standard,Driving,Everyday,fall-kickoff-sale,Fit-Classic-Black,Frame-Classic Original,Golf,Group-Classic-Originals,Hiking,HOLIDAY_SALE,JULY-4TH-2024-50,july-4th-30-50,july-4th-replay,JULY-IDS-2024-50,july4-2025,laborday2025,mdw-2024,MDW25-30,men-best-seller,NON-RX,Premium,product-sizes,RC-PP-BESTSELLER-ANCHORING,RC-PP-BESTSELLER-SERIAL-POSITION,SHADE-SHOP,Signature Series,Size-Small-Large,Timber Series,UPSELL-UV-Blackout,verdn-impact,women-best-seller" data-product-price="5900" data-product-title="Classic Original - Blackout Polarized">
+    <div class="product-block__image-label">
+      <div class="sr-product-tag justify-between">
+        <div class="sr-icon-tag sr-icon-cr"><img src="//shadyrays.com/cdn/shop/files/cr-product-tag-icon.svg" alt="Colorush icon"></div>
+
+        {%- render 'product-badges', product: product -%}
+      </div>
+    </div>
+
+    <!-- etc... -->
+  </div>
+{%- endfor -%}

@@ -1,0 +1,27 @@
+
+/*
+  NOTE:
+
+  These styles assume the badge positioning will be dictated by the container (.sr-product-tag),
+  which already includes absolute positioning and flex alignment.
+
+  If we want this badge to be positioned separate from the colorrush badge, we can add absolute
+  positioning, as well as top and right values to get this in the top right corner.
+*/
+
+.product-badge {
+  display: inline-block;
+  background-color: var(--product-badge-bg, #000);
+  color: var(--product-badge-color, #fff);
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  font-weight: var(--font-weight--bold, 700);
+  font-size: 0.875rem;
+  line-height: 1;
+  border-radius: 1.2rem;
+  z-index: 1;
+}
+
+.product-badge--sale {
+  background-color: var(--product-badge-bg--sale, #D12406);
+}
